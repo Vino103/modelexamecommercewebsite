@@ -1,0 +1,260 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #201010, #351e1e);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+main {
+    flex: 2;
+    margin-right: 20px;
+}
+
+#home {
+    background-image: url('./images/backgroundimg.avif');
+    height: 210vh; 
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1,
+#home p {
+    color: rgb(255, 255, 255);
+}
+
+#menu {
+    text-align: center;
+    margin-top: 600px; 
+    margin-left: 220px;
+    color: #381717;
+}
+#menu ul li{
+    color: #2c0e0e;
+}
+
+aside ul li{
+    color: white;
+}
+aside {
+    flex: 1;
+    padding: 10px;
+    float: right;
+}
+
+#home {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 20px;
+}
+
+#menu {
+    flex: 2; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+ aside {
+    flex: 1; 
+     padding: 20px;
+    border-radius: 8px; 
+    margin-left: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+.floated-image {
+    float: left;
+    margin-right: 10px;
+}
+
+#about {
+    background-color: #381717;
+    height: auto; 
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20%;
+    padding: 10px; 
+}
+
+#about h2 {
+    margin-top: 10px 0; 
+}
+
+/* Services CSS */
+#services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/cofee3.jfif');
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+
+#services p {
+    text-align: center;
+    margin: 20px 0; 
+    color: #fffdfd;
+}
+
+/* Contact CSS */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #381717;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h3,
+.contact-container h2 {
+    color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 7px;
+    border: 1px solid #d3d0d0;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px; 
+    background-color: #fcf7f7;
+    color: rgb(32, 12, 12);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: linear-gradient(to right, #2c0e0e, #412828);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        margin: 0;
+    }
+
+    aside {
+        margin-left: 0; 
+        margin-top: 20px; 
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    main {
+        margin-right: 0;
+    }
+
+    #home {
+        height: auto; 
+        padding: 20px;
+    }
+
+    #menu {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #about {
+        margin: 10%; 
+        padding: 20px; 
+    }
+
+    #services {
+        height: auto; 
+        padding: 20px;
+    }
+
+    .contact-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    footer {
+        font-size: 14px; 
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 24px; 
+    }
+
+    #home p {
+        font-size: 16px; 
+    }
+
+    #about h2,
+    #services p {
+        font-size: 18px; 
+    }
+}
